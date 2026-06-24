@@ -1,0 +1,14 @@
+# Jekyll build output and caches — these are generated automatically.
+_site/
+.sass-cache/
+.jekyll-cache/
+.jekyll-metadata
+
+# Ruby / Bundler
+vendor/
+.bundle/
+Gemfile.lock
+
+# OS / editor cruft
+.DS_Store
+Thumbs.db

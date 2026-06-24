@@ -1,0 +1,51 @@
+---
+layout: default
+---
+<!-- ===== Photo slideshow ===== -->
+{% if site.hero_images and site.hero_images.size > 0 %}
+<section class="hero" aria-label="Photos of {{ site.couple_short }}">
+  {% for img in site.hero_images %}
+  <div class="hero__slide{% if forloop.first %} is-active{% endif %}"
+       style="background-image: url('{{ img | relative_url }}');"></div>
+  {% endfor %}
+</section>
+{% endif %}
+
+<!-- ===== Announcement band ===== -->
+<section class="announce">
+  <img class="announce__floral announce__floral--tl"
+       src="{{ '/assets/images/floral-corner.svg' | relative_url }}" alt="" aria-hidden="true">
+  <img class="announce__floral announce__floral--br"
+       src="{{ '/assets/images/floral-corner.svg' | relative_url }}" alt="" aria-hidden="true">
+
+  <div class="announce__inner">
+    <h1 class="names">
+      <span class="names__name">{{ site.partner_one_full | default: site.partner_one }}</span>
+      <span class="names__amp">and</span>
+      <span class="names__name">{{ site.partner_two_full | default: site.partner_two }}</span>
+    </h1>
+
+    <p class="event-date">{{ site.wedding_date_display }}</p>
+    <p class="event-loc">{{ site.location }}</p>
+
+    <div class="countdown" data-wedding-date="{{ site.wedding_date }}"
+         aria-label="Countdown to the wedding day">
+      <div class="countdown__unit"><span class="countdown__num" data-days>—</span><span class="countdown__label">Days</span></div>
+      <div class="countdown__unit"><span class="countdown__num" data-hours>—</span><span class="countdown__label">Hours</span></div>
+      <div class="countdown__unit"><span class="countdown__num" data-minutes>—</span><span class="countdown__label">Minutes</span></div>
+      <div class="countdown__unit"><span class="countdown__num" data-seconds>—</span><span class="countdown__label">Seconds</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Page content (from index.md) ===== -->
+{% if content != "" %}
+<section class="content">
+  <div class="content__inner">
+    {{ content }}
+  </div>
+</section>
+{% endif %}
+
+<!-- ===== RSVP call to action ===== -->
+{% include rsvp-cta.html %}

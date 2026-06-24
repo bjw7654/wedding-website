@@ -1,0 +1,10 @@
+{% if site.rsvp_url and site.rsvp_url != "" %}
+<section class="rsvp-cta">
+  <div class="rsvp-cta__inner">
+    <h2 class="rsvp-cta__title">Will you celebrate with us?</h2>
+    <p class="rsvp-cta__text">We would be honored to have you there. Please let us know
+      whether you can join us by clicking below.</p>
+    <a class="btn btn--light" href="{{ site.rsvp_url }}" target="_blank" rel="noopener">RSVP on Zola</a>
+  </div>
+</section>
+{% endif %}

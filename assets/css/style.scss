@@ -1,0 +1,425 @@
+---
+# This empty front matter tells Jekyll to process the colors from _config.yml.
+---
+/* ===========================================================================
+   Erin & Ben — Wedding website styles
+   Inspired by the classic "royal blue & peony" wedding look.
+   Theme colors are pulled from _config.yml, so you can re-skin the whole site
+   by editing the hex codes there.
+   =========================================================================== */
+
+:root {
+  --color-primary:      {{ site.colors.primary      | default: "#3464A6" }};
+  --color-primary-dark: {{ site.colors.primary_dark | default: "#183B54" }};
+  --color-accent:       {{ site.colors.accent       | default: "#C7305B" }};
+  --color-bg:           {{ site.colors.bg           | default: "#ffffff" }};
+  --color-bg-alt:       {{ site.colors.bg_alt       | default: "#f5f7fb" }};
+  --color-text:         {{ site.colors.text         | default: "#2b2b2b" }};
+
+  --font-script: "Great Vibes", "Segoe Script", cursive;
+  --font-serif:  "EB Garamond", Georgia, "Times New Roman", serif;
+
+  --maxw: 1080px;
+  --content-w: 720px;
+}
+
+/* ---------- Base ---------- */
+* { box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  margin: 0;
+  font-family: var(--font-serif);
+  font-size: 1.15rem;
+  line-height: 1.75;
+  color: var(--color-text);
+  background: var(--color-bg);
+  -webkit-font-smoothing: antialiased;
+}
+
+img { max-width: 100%; display: block; }
+
+a { color: var(--color-accent); }
+
+main { display: block; }
+
+/* Visually-hidden helper for screen readers */
+.sr-only {
+  position: absolute; width: 1px; height: 1px;
+  padding: 0; margin: -1px; overflow: hidden; clip: rect(0,0,0,0); border: 0;
+}
+
+/* ===========================================================================
+   Header & navigation
+   =========================================================================== */
+.site-header {
+  background: var(--color-primary);
+  color: #fff;
+  text-align: center;
+  padding: 1.5rem 1rem 0;
+  position: relative;
+}
+
+.site-header__title {
+  font-family: var(--font-script);
+  color: #fff;
+  text-decoration: none;
+  font-size: clamp(2.4rem, 6vw, 3.25rem);
+  line-height: 1;
+  display: inline-block;
+}
+
+.site-nav ul {
+  list-style: none;
+  margin: 0.5rem 0 0;
+  padding: 0.75rem 0 1.1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1.75rem;
+}
+
+.site-nav a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.05rem;
+  letter-spacing: 0.05em;
+  padding-bottom: 4px;
+  border-bottom: 2px solid transparent;
+  transition: border-color 0.2s ease, opacity 0.2s ease;
+}
+
+.site-nav a:hover { opacity: 0.82; }
+.site-nav a.is-active { border-bottom-color: #fff; }
+
+/* RSVP pill in the nav */
+.nav-rsvp a {
+  border: 1.5px solid rgba(255, 255, 255, 0.85);
+  border-radius: 999px;
+  padding: 0.35rem 1.2rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  font-size: 0.85rem;
+}
+.nav-rsvp a:hover {
+  background: #fff;
+  color: var(--color-primary);
+  opacity: 1;
+}
+
+/* Mobile menu button (hidden on larger screens) */
+.nav-toggle {
+  display: none;
+  position: absolute;
+  top: 1.6rem;
+  right: 1.1rem;
+  width: 38px;
+  height: 32px;
+  background: none;
+  border: 0;
+  cursor: pointer;
+  padding: 6px 4px;
+}
+.nav-toggle span {
+  display: block;
+  height: 2px;
+  background: #fff;
+  margin: 5px 0;
+  transition: transform 0.25s ease, opacity 0.2s ease;
+}
+
+/* ===========================================================================
+   Hero photo slideshow
+   =========================================================================== */
+.hero {
+  position: relative;
+  height: 76vh;
+  min-height: 380px;
+  max-height: 760px;
+  background: var(--color-primary-dark);
+  overflow: hidden;
+}
+
+.hero__slide {
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center;
+  opacity: 0;
+  transition: opacity 1.5s ease-in-out;
+}
+.hero__slide.is-active { opacity: 1; }
+
+/* ===========================================================================
+   Announcement band (names, date, countdown)
+   =========================================================================== */
+.announce {
+  position: relative;
+  background: var(--color-primary);
+  color: #fff;
+  text-align: center;
+  padding: 4.5rem 1.25rem;
+  overflow: hidden;
+}
+
+.announce__floral {
+  position: absolute;
+  width: 300px;
+  max-width: 36%;
+  opacity: 0.92;
+  pointer-events: none;
+  user-select: none;
+}
+.announce__floral--tl { top: 0; left: 0; }
+.announce__floral--br { bottom: 0; right: 0; transform: rotate(180deg); }
+
+.announce__inner {
+  position: relative;
+  z-index: 1;
+  max-width: var(--maxw);
+  margin: 0 auto;
+}
+
+.names { margin: 0; font-weight: 400; line-height: 1.12; }
+.names__name {
+  display: block;
+  font-family: var(--font-script);
+  font-size: clamp(2.8rem, 7.5vw, 4.4rem);
+  margin: 0.1em 0;
+}
+.names__amp {
+  display: block;
+  font-style: italic;
+  font-size: 1.3rem;
+  margin: 0.9rem 0 1.1rem;
+  opacity: 0.95;
+}
+
+.event-date {
+  font-family: var(--font-script);
+  font-size: clamp(1.9rem, 4.5vw, 2.85rem);
+  margin: 2.25rem 0 0.25rem;
+}
+.event-loc {
+  font-size: 1.2rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  margin: 0 0 2rem;
+  opacity: 0.95;
+}
+
+/* Countdown clock */
+.countdown {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1.5rem 2rem;
+}
+.countdown__unit { min-width: 62px; }
+.countdown__num {
+  display: block;
+  font-size: 2rem;
+  line-height: 1.1;
+  font-variant-numeric: tabular-nums;
+}
+.countdown__label {
+  display: block;
+  font-size: 0.82rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  opacity: 0.85;
+}
+
+/* ===========================================================================
+   Page header (sub-pages)
+   =========================================================================== */
+.page-head {
+  background: var(--color-bg-alt);
+  text-align: center;
+  padding: 3.25rem 1rem 1.75rem;
+}
+.page-title {
+  font-family: var(--font-script);
+  color: var(--color-primary);
+  font-size: clamp(2.75rem, 6vw, 3.75rem);
+  font-weight: 400;
+  margin: 0;
+  line-height: 1.05;
+}
+.page-divider { width: 190px; max-width: 70%; margin: 0.4rem auto 0; opacity: 0.85; }
+.page-subtitle { margin: 0.75rem auto 0; max-width: 560px; font-style: italic; color: #555; }
+
+/* ===========================================================================
+   Content / Markdown styling
+   =========================================================================== */
+.content { padding: 3.5rem 1.25rem; }
+.content__inner { max-width: var(--content-w); margin: 0 auto; }
+
+.content__inner > :first-child { margin-top: 0; }
+
+.content__inner h2 {
+  font-family: var(--font-script);
+  font-weight: 400;
+  color: var(--color-primary);
+  font-size: clamp(2.1rem, 4.5vw, 2.75rem);
+  text-align: center;
+  margin: 2.75rem 0 1.1rem;
+  line-height: 1.1;
+}
+.content__inner h3 {
+  font-family: var(--font-serif);
+  font-weight: 600;
+  color: var(--color-primary-dark);
+  font-size: 1.5rem;
+  margin: 2rem 0 0.4rem;
+}
+.content__inner h4 {
+  font-weight: 600;
+  color: var(--color-primary-dark);
+  font-size: 1.2rem;
+  margin: 1.5rem 0 0.3rem;
+}
+.content__inner p { margin: 0 0 1.2rem; }
+.content__inner a { color: var(--color-accent); text-underline-offset: 2px; }
+.content__inner a:hover { text-decoration: none; }
+
+.content__inner ul,
+.content__inner ol { margin: 0 0 1.2rem; padding-left: 1.3rem; }
+.content__inner li { margin-bottom: 0.4rem; }
+
+.content__inner img { margin: 1.5rem auto; border-radius: 4px; }
+
+.content__inner blockquote {
+  margin: 1.5rem 0;
+  padding: 0.4rem 1.4rem;
+  border-left: 3px solid var(--color-primary);
+  color: #555;
+  font-style: italic;
+}
+
+.content__inner hr {
+  border: 0;
+  height: 1px;
+  background: linear-gradient(to right, transparent, #d6dbe6, transparent);
+  margin: 2.5rem auto;
+}
+
+.content__inner table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1.5rem 0;
+}
+.content__inner th,
+.content__inner td {
+  border-bottom: 1px solid #e4e7ee;
+  padding: 0.6rem 0.5rem;
+  text-align: left;
+}
+.content__inner th { color: var(--color-primary-dark); }
+
+/* A reusable centered detail block for schedules etc. */
+.content__inner .detail { text-align: center; }
+
+/* ===========================================================================
+   Buttons
+   =========================================================================== */
+.btn {
+  display: inline-block;
+  font-family: var(--font-serif);
+  font-size: 1.1rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  padding: 0.8rem 2.4rem;
+  border-radius: 999px;
+  text-decoration: none;
+  cursor: pointer;
+  border: 1.5px solid transparent;
+  transition: transform 0.15s ease, background 0.2s ease, color 0.2s ease, box-shadow 0.2s ease;
+}
+.btn--light {
+  background: #fff;
+  color: var(--color-primary);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
+}
+.btn--light:hover { transform: translateY(-2px); box-shadow: 0 10px 24px rgba(0, 0, 0, 0.18); }
+.btn--primary { background: var(--color-accent); color: #fff; }
+.btn--primary:hover { transform: translateY(-2px); filter: brightness(1.05); }
+.btn--outline { border-color: var(--color-primary); color: var(--color-primary); }
+.btn--outline:hover { background: var(--color-primary); color: #fff; }
+
+/* ===========================================================================
+   RSVP call to action
+   =========================================================================== */
+.rsvp-cta {
+  background: var(--color-primary);
+  color: #fff;
+  text-align: center;
+  padding: 4.25rem 1.25rem;
+}
+.rsvp-cta__inner { max-width: 620px; margin: 0 auto; }
+.rsvp-cta__title {
+  font-family: var(--font-script);
+  font-weight: 400;
+  font-size: clamp(2.3rem, 5vw, 3.1rem);
+  margin: 0 0 0.6rem;
+}
+.rsvp-cta__text { margin: 0 auto 1.8rem; opacity: 0.95; }
+
+/* ===========================================================================
+   Footer
+   =========================================================================== */
+.site-footer {
+  background: var(--color-primary-dark);
+  color: #fff;
+  text-align: center;
+  padding: 2.75rem 1rem;
+}
+.site-footer__names {
+  font-family: var(--font-script);
+  font-size: 2.1rem;
+  margin: 0 0 0.25rem;
+}
+.site-footer__date { opacity: 0.85; margin: 0 0 0.9rem; letter-spacing: 0.04em; }
+.site-footer__rsvp {
+  color: #fff;
+  text-decoration: none;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.6);
+  padding-bottom: 2px;
+}
+.site-footer__rsvp:hover { border-bottom-color: #fff; }
+.site-footer__note { margin: 1rem 0 0; opacity: 0.7; font-style: italic; font-size: 0.95rem; }
+
+/* ===========================================================================
+   Responsive
+   =========================================================================== */
+@media (max-width: 700px) {
+  body { font-size: 1.08rem; }
+
+  .nav-toggle { display: block; }
+
+  .site-nav {
+    display: none;
+    width: 100%;
+  }
+  .site-nav.is-open { display: block; }
+  .site-nav ul {
+    flex-direction: column;
+    gap: 1rem;
+    padding-bottom: 1.4rem;
+  }
+  .nav-rsvp a { display: inline-block; }
+
+  .announce { padding: 3.25rem 1rem; }
+  .announce__floral { width: 200px; max-width: 42%; }
+
+  .hero { height: 58vh; }
+
+  .content { padding: 2.5rem 1.1rem; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * { scroll-behavior: auto; }
+  .hero__slide { transition: none; }
+}

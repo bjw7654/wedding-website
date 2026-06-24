@@ -1,0 +1,60 @@
+# =============================================================================
+#  WEDDING WEBSITE SETTINGS
+#  -----------------------------------------------------------------------------
+#  This is the main "control panel" for your site. Change the values below,
+#  save the file, and the website updates automatically once you push to GitHub.
+#  You do NOT need to know how to code to edit this file.
+# =============================================================================
+
+# --- The couple --------------------------------------------------------------
+partner_one: "Erin"            # Shown in a few places
+partner_two: "Ben"
+partner_one_full: "Erin Thompson"   # Shown big on the home page
+partner_two_full: "Ben Williams"
+couple_short: "Erin & Ben"     # Shown in the top header and footer
+
+# --- Wedding details ---------------------------------------------------------
+wedding_date: "2027-03-19T16:00:00"   # Used by the countdown clock. Format: YYYY-MM-DDThh:mm:ss
+wedding_date_display: "March 19, 2027"  # The pretty date guests see
+location: "Austin, TX"
+
+# --- RSVP --------------------------------------------------------------------
+# Paste the link to your Zola RSVP page here. Every "RSVP" button points to it.
+rsvp_url: "https://www.zola.com/wedding/erinandbenmarch19/rsvp"
+
+# --- Home page slideshow -----------------------------------------------------
+# Drop your photos into the  assets/images/hero/  folder, then list them here.
+# Add or remove lines to add or remove photos. They fade from one to the next.
+hero_images:
+  - "/assets/images/hero/placeholder-1.svg"
+  - "/assets/images/hero/placeholder-2.svg"
+
+# --- Colors (change these hex codes to re-skin the whole site) ---------------
+colors:
+  primary: "#3464A6"       # Main royal blue
+  primary_dark: "#183B54"  # Deep navy (footer)
+  accent: "#C7305B"        # Rose accent (links & buttons)
+  bg: "#ffffff"            # Page background
+  bg_alt: "#f5f7fb"        # Soft background for page titles
+  text: "#2b2b2b"          # Body text
+
+# =============================================================================
+#  TECHNICAL SETTINGS — you can usually leave everything below this line alone.
+# =============================================================================
+title: "Erin & Ben"
+description: "Join us as we celebrate our wedding. Schedule, travel, and RSVP details."
+lang: "en"
+
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+sass:
+  style: compressed
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - vendor
+  - "*.gemspec"

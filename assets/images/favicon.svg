@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Wedding monogram">
+  <rect width="64" height="64" rx="14" fill="#3464A6"/>
+  <g fill="none" stroke="#ffffff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" transform="translate(32 34)">
+    <path transform="rotate(0)"   d="M0 0 C -7 -10 -6 -22 0 -27 C 6 -22 7 -10 0 0 Z"/>
+    <path transform="rotate(72)"  d="M0 0 C -7 -10 -6 -22 0 -27 C 6 -22 7 -10 0 0 Z"/>
+    <path transform="rotate(144)" d="M0 0 C -7 -10 -6 -22 0 -27 C 6 -22 7 -10 0 0 Z"/>
+    <path transform="rotate(216)" d="M0 0 C -7 -10 -6 -22 0 -27 C 6 -22 7 -10 0 0 Z"/>
+    <path transform="rotate(288)" d="M0 0 C -7 -10 -6 -22 0 -27 C 6 -22 7 -10 0 0 Z"/>
+    <circle r="3" fill="#ffffff" stroke="none"/>
+  </g>
+</svg>
