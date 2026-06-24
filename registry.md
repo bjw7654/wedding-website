@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Registry
-nav_order: 5
+nav_order: 6
 permalink: /registry/
 subtitle: Your presence is the greatest gift.
 ---

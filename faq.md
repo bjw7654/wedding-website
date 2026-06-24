@@ -1,7 +1,7 @@
 ---
 layout: page
 title: FAQ
-nav_order: 4
+nav_order: 5
 permalink: /faq/
 subtitle: Answers to a few common questions.
 ---
