@@ -6,6 +6,8 @@ permalink: /travel/
 subtitle: How to get here and where to stay.
 ---
 
+<img src="{{ '/assets/images/austin.jpg' | relative_url }}" alt="Downtown Austin, Texas">
+
 ## Getting There
 
 The closest airport is **Austin-Bergstrom International Airport (AUS)**, about 20
