@@ -19,24 +19,19 @@ explore while you're in town.
 
 ## Nature & Outdoors
 
-- **Zilker Botanical Garden** — A beautiful, peaceful 28-acre botanical garden near Zilker Park and Barton Springs. This is where Ben proposed to Erin.
+- **Zilker Botanical Garden** — A beautiful, peaceful 28-acre botanical garden near Zilker Park and Barton Springs. We got engaged here!
 - **Barton Springs Pool** — A classic Austin spring-fed swimming pool near Zilker Park.
 - **Lady Bird Lake Trail** — Easy walking, running, and skyline views right through the middle of town.
 - **Zilker Park** — Austin's big central park; great for a casual walk or picnic.
-- **Hamilton Pool Preserve** — A beautiful Hill Country grotto; reservations are usually required, and swimming is not always allowed.
-- **McKinney Falls State Park** — Trails, limestone falls, and a nature break inside Austin city limits.
 - **Mount Bonnell** — A quick climb with one of the best views of Lake Austin.
 
 ## Nice Dinners & Reservations
 
-- **Red Ash** — Erin & Ben's favorite fine-dining Italian spot in Austin, known for handmade pasta, wood-fired steaks, and a lively, special-occasion feel. Book early.
+- **Red Ash** — Our favorite fine-dining Italian spot in Austin, known for handmade pasta, wood-fired steaks, and a lively, special-occasion feel. Book early.
 - **Aba** — Incredible Mediterranean food with standout dips, mezze, kebabs, seafood, and cocktails. Everything is fresh, flavorful, and extremely shareable.
 - **Odd Duck** — Creative, seasonal Austin food in a relaxed but special-feeling setting. A favorite of Ben's.
 - **Canje** — Bold, vibrant Caribbean food in East Austin, with incredible jerk chicken, pepperpot, curry, cocktails, and big celebratory flavors. A true Austin standout.
 - **Uchi** — Austin's iconic sushi and Japanese-inspired fine dining spot. Also check out Uchiko and Uchibā.
-- **Suerte** — Modern Mexican food, great masa dishes, and excellent cocktails. Also check out Este and Bar Toti by the same group.
-- **Olamaie** — Refined Southern food and one of the prettiest special-occasion dinners in town.
-- **Dai Due** — A uniquely Austin butcher-shop restaurant with incredible Texas-sourced meats, wild game, Gulf seafood, and hearty, woodsy flavors.
 
 ## Barbecue & Smoked Meats
 
@@ -45,37 +40,27 @@ explore while you're in town.
 - **la Barbecue** — Excellent East Austin barbecue, especially brisket and beef ribs.
 - **Terry Black's Barbecue** — Classic Central Texas barbecue near downtown; very visitor-friendly. Not quite at the level of LeRoy and Lewis or Franklin, but still great, and an easier way to experience good Austin BBQ.
 - **Loro** — Casual Asian smokehouse from the teams behind Uchi and Franklin Barbecue; great patio and group option. A favorite of Ben's.
-- **KG BBQ** — Egyptian-Texas barbecue with a more unique Austin food-truck feel.
 
 ## Casual Austin Favorites
 
 - **Veracruz All Natural** — Beloved breakfast tacos; the migas taco is a classic.
-- **Torchy's Tacos** — Austin-born tacos; get the queso. Yes, it was better 20 years ago, but it's still a great Texas chain.
+- **Torchy's Tacos** — Austin-born tacos; get the queso. We think they have the best queso in Austin!
 - **Home Slice Pizza** — South Congress favorite for New York-style pizza and a great Italian sub. Touristy, but a cool, very Austin location.
 - **Phil's Ice House** — Erin & Ben's favorite fast burger spot in Austin: casual, local, kid-friendly, and perfect for an easy burger, fries, and shake.
 - **Cabo Bob's** — Big burritos and bowls with fresh-pressed tortillas.
 - **Juan in a Million** — Old-school East Austin Tex-Mex breakfast institution.
 - **Kerbey Lane Cafe** — Austin diner standby for pancakes, queso, and comfort food.
-- **Amy's Ice Creams** — Local ice cream classic with several locations around town.
+- **Amy's Ice Creams** — Local ice cream classic with unique flavors and several locations around town.
+- **Mozart's Coffee Roasters** - 
+- **Radio East - 
 
 ## Fun Around Town
 
 - **Alamo Drafthouse** — Austin-born dinner-and-a-movie institution; a great low-effort option if you want to catch a film, order snacks, and relax. You can't properly complain about the new ordering system if you've never been.
 - **Congress Avenue Bats** — Around sunset, watch Austin's bats fly out from under the Congress Avenue Bridge. Around 1.5 million bats live under the bridge during peak season. March is early in bat season, so sightings can vary, but it's a classic Austin experience if they're flying.
 - **Cidercade** — Big arcade on Lady Bird Lake with unlimited free-play games after admission; fun for groups, dates, and low-stakes hanging out.
-- **The White Horse / Sagebrush** — Erin & Ben are not two-steppers, but these are apparently great picks if you want live music, dancing, and a very Texas dance-hall night out.
-- **Esther's Follies** — Long-running Sixth Street comedy, magic, music, and satire show; touristy in a fun, actually-Austin way.
 - **Blanton Museum of Art** — UT's major art museum, with a strong permanent collection, rotating exhibitions, and Ellsworth Kelly's Austin.
 - **LBJ Presidential Library** — Presidential history, civil rights, the Great Society, and a look at 1960s America on the UT campus.
-- **The Dirdie Birdie** — A polished indoor mini-golf option at the Domain; good if the weather is bad or you want something easy with drinks nearby.
-
-## Neighborhoods to Wander
-
-- **South Congress** — Austin's classic visitor stroll: shops, restaurants, music spots, people-watching, and a great view toward the Capitol.
-- **East Austin** — Restaurants, bars, coffee shops, murals, music, and a mix of old and new Austin energy.
-- **Mueller** — A very easygoing neighborhood with parks, restaurants, a lake trail, a farmers market, and family-friendly places to wander.
-- **Clarksville** — A historic, walkable West Austin neighborhood with pretty streets, local restaurants, and a quieter feel close to downtown.
-- **Downtown / Seaholm / Lady Bird Lake** — A good low-effort area for walking the trail, visiting the Central Library, grabbing coffee, and seeing the skyline.
 
 ## Planning Tips
 
