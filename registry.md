@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Registry
-nav_order: 6
+# nav_order: 6   # Hidden from the menu for now — uncomment to show Registry in the header again.
 permalink: /registry/
 subtitle: Your presence is the greatest gift.
 ---

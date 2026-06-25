@@ -1,8 +1,10 @@
 <footer class="site-footer">
   <p class="site-footer__names">{{ site.couple_short }}</p>
   <p class="site-footer__date">{{ site.wedding_date_display }} &middot; {{ site.location }}</p>
+  {% comment %} RSVP link hidden for now — we'll add it back later.
   {% if site.rsvp_url and site.rsvp_url != "" %}
   <p><a class="site-footer__rsvp" href="{{ site.rsvp_url }}" target="_blank" rel="noopener">RSVP on Zola</a></p>
   {% endif %}
+  {% endcomment %}
   <p class="site-footer__note">We can't wait to celebrate with you.</p>
 </footer>
