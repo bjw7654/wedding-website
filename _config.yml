@@ -61,3 +61,5 @@ exclude:
   - README.md
   - vendor
   - "*.gemspec"
+  # Keep the high-res floral source in the repo, but don't publish it to the live site.
+  - assets/images/florals/bouquet-source.png

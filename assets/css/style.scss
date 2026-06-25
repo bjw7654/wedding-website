@@ -166,14 +166,15 @@ main { display: block; }
 
 .announce__floral {
   position: absolute;
-  width: 300px;
-  max-width: 36%;
-  opacity: 0.92;
+  height: clamp(320px, 56vw, 720px);
+  width: auto;
+  opacity: 0.95;
   pointer-events: none;
   user-select: none;
+  z-index: 0;
 }
-.announce__floral--tl { top: 0; left: 0; }
-.announce__floral--br { bottom: 0; right: 0; transform: rotate(180deg); }
+.announce__floral--tl { top: 156px; left: 52px; transform: translate(-50%, -50%) rotate(157deg); }
+.announce__floral--br { bottom: 156px; right: 52px; transform: translate(50%, 50%) rotate(-23deg); }
 
 .announce__inner {
   position: relative;
@@ -412,7 +413,9 @@ main { display: block; }
   .nav-rsvp a { display: inline-block; }
 
   .announce { padding: 3.25rem 1rem; }
-  .announce__floral { width: 200px; max-width: 42%; }
+  .announce__floral { height: 280px; opacity: 0.85; }
+  .announce__floral--tl { top: 40px; left: 28px; }
+  .announce__floral--br { bottom: 40px; right: 28px; }
 
   .hero { height: 58vh; }
 
