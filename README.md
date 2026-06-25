@@ -63,6 +63,10 @@ See **`assets/images/hero/README.md`** for step-by-step photo instructions. In
 short: drop your pictures into `assets/images/hero/` and list them in
 `_config.yml`.
 
+> 💡 If one of you gets cut off on phones, you can keep that person in view with
+> a `mobile_position` setting — see the comments in `_config.yml` or the hero
+> folder's README.
+
 ---
 
 ## ➕ Adding a brand-new page
@@ -136,6 +140,25 @@ publishing:
    ```
 
 3. Open <http://localhost:4000> in your browser.
+
+### 📱 Checking the phone view before publishing
+
+With the preview open in **Chrome** or **Edge**, you can see exactly how the site
+looks on a phone:
+
+1. Press **F12** to open the developer tools.
+2. Press **Ctrl + Shift + M** (Windows) or **Cmd + Shift + M** (Mac) to turn on
+   the device toolbar — or click the little phone/tablet icon.
+3. Choose a phone such as **iPhone 14** from the dropdown along the top, or drag
+   the edge of the page to make it narrow.
+
+Now you can see exactly how each photo is framed and tweak its `mobile_position`
+in `_config.yml` (see "Photos in the slideshow" above) until it looks right.
+
+> ⚠️ After you change **`_config.yml`**, stop the preview (**Ctrl + C** in the
+> terminal) and run `bundle exec jekyll serve` again — Jekyll only reads that
+> file when it starts up. Edits to page text (`.md` files) and styles refresh on
+> their own.
 
 ---
 

@@ -25,12 +25,34 @@ rsvp_url: "https://www.zola.com/wedding/erinandbenmarch19/rsvp"
 # --- Home page slideshow -----------------------------------------------------
 # Drop your photos into the  assets/images/hero/  folder, then list them here.
 # Add or remove lines to add or remove photos. They fade from one to the next.
+#
+# PHONE FRAMING: Photos fill the screen edge-to-edge, so on a narrow phone the
+#   sides (or top/bottom) of a photo get trimmed. If someone is being cut off on
+#   phones, give that ONE photo a "mobile_position" to choose which part to keep.
+#   This only affects phones -- computers still show the photo centered.
+#
+#   To do that, change a line from the short form to the longer form, like this:
+#
+#       - url: "/assets/images/hero/hero-5.jpg"
+#         mobile_position: "right center"
+#
+#   Handy values for mobile_position:
+#       "center"          the default -- keep the middle
+#       "left center"     keep the LEFT side       "right center"  keep the RIGHT side
+#       "center top"      keep the TOP             "center bottom" keep the BOTTOM
+#       "70% center"      fine-tune side to side   (0% = far left, 100% = far right)
+#       "center 30%"      fine-tune up and down    (0% = top,      100% = bottom)
 hero_images:
   - "/assets/images/hero/hero-1.jpg"
   - "/assets/images/hero/hero-2.jpg"
-  - "/assets/images/hero/hero-3.jpg"
+  # In hero-3 the two of you walk a little left of center, so nudge the
+  # framing left on phones to keep you both in the middle.
+  - url: "/assets/images/hero/hero-3.jpg"
+    mobile_position: "40% center"
   - "/assets/images/hero/hero-4.jpg"
-  - "/assets/images/hero/hero-5.jpg"
+  # In hero-5 the two of you stand on the right, so keep the right side on phones.
+  - url: "/assets/images/hero/hero-5.jpg"
+    mobile_position: "right center"
 
 # --- Colors (change these hex codes to re-skin the whole site) ---------------
 colors:

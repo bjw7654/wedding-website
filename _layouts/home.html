@@ -5,8 +5,16 @@ layout: default
 {% if site.hero_images and site.hero_images.size > 0 %}
 <section class="hero" aria-label="Photos of {{ site.couple_short }}">
   {% for img in site.hero_images %}
+  {%- comment -%} A photo can be a simple path, or a small block with an optional
+      "mobile_position" that only changes how it's framed on phones (see _config.yml). {%- endcomment -%}
+  {%- assign hero_src = img -%}
+  {%- assign hero_focus = "" -%}
+  {%- if img.url -%}
+    {%- assign hero_src = img.url -%}
+    {%- assign hero_focus = img.mobile_position -%}
+  {%- endif -%}
   <div class="hero__slide{% if forloop.first %} is-active{% endif %}"
-       style="background-image: url('{{ img | relative_url }}');"></div>
+       style="background-image: url('{{ hero_src | relative_url }}');{% if hero_focus and hero_focus != '' %} --focus-mobile: {{ hero_focus }};{% endif %}"></div>
   {% endfor %}
 </section>
 {% endif %}

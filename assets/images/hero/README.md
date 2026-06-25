@@ -20,3 +20,20 @@ page.
 
 4. Save, and you're done! You can delete the `placeholder-1.svg` and
    `placeholder-2.svg` files once you've added your own.
+
+## A photo looks cut off on phones?
+
+Big photos are filled edge-to-edge, so on a narrow phone screen the sides (or
+top and bottom) get trimmed. If one of you ends up cut off, tell that single
+photo which part to keep by adding a `mobile_position` in `_config.yml`:
+
+```yaml
+hero_images:
+  - "/assets/images/hero/engagement-1.jpg"      # normal (centered)
+  - url: "/assets/images/hero/engagement-2.jpg" # someone on the right? keep it
+    mobile_position: "right center"
+```
+
+Common choices: `"left center"`, `"right center"`, `"center top"`,
+`"center bottom"`, or a percentage like `"70% center"`. This only changes how the
+photo looks on phones -- on a computer it still shows centered.

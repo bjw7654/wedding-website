@@ -413,11 +413,23 @@ main { display: block; }
   .nav-rsvp a { display: inline-block; }
 
   .announce { padding: 3.25rem 1rem; }
-  .announce__floral { height: 280px; opacity: 0.85; }
-  .announce__floral--tl { top: 40px; left: 28px; }
-  .announce__floral--br { bottom: 40px; right: 28px; }
+  .announce__floral { height: 385px; opacity: 0.85; }
+  .announce__floral--tl { top: 24px; left: -6px; }
+  .announce__floral--br { bottom: 24px; right: -6px; }
+
+  /* Make the countdown more compact on phones so it stays on one line and
+     clear of the corner bouquets. */
+  .countdown { gap: 0.9rem 1.2rem; }
+  .countdown__unit { min-width: 46px; }
+  .countdown__num { font-size: 1.55rem; }
+  .countdown__label { font-size: 0.68rem; letter-spacing: 0.1em; }
 
   .hero { height: 58vh; }
+
+  /* On phones each photo can use its own focal point, set per photo in
+     _config.yml via "mobile_position". Falls back to centered. Desktop is
+     unaffected, so wide screens keep the centered framing. */
+  .hero__slide { background-position: var(--focus-mobile, center); }
 
   .content { padding: 2.5rem 1.1rem; }
 }
