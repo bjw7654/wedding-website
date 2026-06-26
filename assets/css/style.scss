@@ -135,15 +135,12 @@ main { display: block; }
    =========================================================================== */
 .hero {
   position: relative;
-  /* The engagement photos are landscape (about 1.72 : 1). Match the hero to
-     that same shape so the WHOLE photo shows on computers instead of having
-     the top and bottom cropped off. We cap the WIDTH (not the height), which
-     keeps the hero from ever growing taller than ~760px; on very wide screens
-     the photo simply centers with the deep-navy band showing at the sides.
-     Phones are handled separately below and keep their edge-to-edge framing. */
+  /* The engagement photos are landscape (about 1.72 : 1). Sizing the hero with
+     that same aspect-ratio lets each photo fill the FULL width of the window
+     (edge to edge, like our Zola site) while still showing the whole photo --
+     no top/bottom cropping and no empty space at the sides. The height simply
+     follows from the window width. Phones are handled separately below. */
   width: 100%;
-  max-width: 1304px;
-  margin: 0 auto;
   aspect-ratio: 1680 / 979;
   min-height: 380px;
   background: var(--color-primary-dark);
