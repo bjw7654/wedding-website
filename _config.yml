@@ -54,6 +54,12 @@ hero_images:
   - url: "/assets/images/hero/hero-5.jpg"
     mobile_position: "right center"
 
+# --- Closing photo (bottom of the home page) ---------------------------------
+# A single wide photo shown near the bottom of the home page, just like the one
+# at the bottom of our Zola site. Drop a photo into  assets/images/  and point
+# to it here. Leave it blank ("") to hide it.
+closing_photo: "/assets/images/closing.jpg"
+
 # --- Colors (change these hex codes to re-skin the whole site) ---------------
 colors:
   primary: "#3464A6"       # Main royal blue

@@ -329,6 +329,22 @@ main { display: block; }
 .content__inner .detail { text-align: center; }
 
 /* ===========================================================================
+   Closing photo (bottom of the home page, like our Zola site)
+   A single wide photo, centered and shown in full (no cropping).
+   =========================================================================== */
+.closing {
+  max-width: 1000px;            /* the photo's own width; centered like Zola */
+  margin: 1.5rem auto 4rem;
+  padding: 0 1.25rem;
+}
+.closing__img {
+  display: block;
+  width: 100%;
+  height: auto;                 /* keep the whole photo -- no cropping */
+  border-radius: 4px;
+}
+
+/* ===========================================================================
    Buttons
    =========================================================================== */
 .btn {

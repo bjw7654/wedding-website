@@ -54,3 +54,11 @@ layout: default
   </div>
 </section>
 {% endif %}
+
+<!-- ===== Closing photo (bottom of the page, like our Zola site) ===== -->
+{% if site.closing_photo and site.closing_photo != "" %}
+<section class="closing">
+  <img class="closing__img" src="{{ site.closing_photo | relative_url }}"
+       alt="{{ site.partner_one }} and {{ site.partner_two }}" loading="lazy">
+</section>
+{% endif %}
