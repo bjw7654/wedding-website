@@ -19,6 +19,9 @@
   --font-script: "Luxurious Script", "Segoe Script", cursive;
   --font-serif:  "EB Garamond", Georgia, "Times New Roman", serif;
 
+  /* How much to stretch the script font horizontally. 1 = normal, 1.1 = 10% wider. */
+  --script-scale: 1.16;
+
   --maxw: 1080px;
   --content-w: 720px;
 }
@@ -65,7 +68,8 @@ main { display: block; }
   font-family: var(--font-script);
   color: #fff;
   text-decoration: none;
-  font-size: clamp(2.4rem, 6vw, 3.25rem);
+  font-size: clamp(3.4rem, 8.1vw, 4.5rem);
+  transform: scaleX(var(--script-scale));
   line-height: 1;
   display: inline-block;
 }
@@ -192,8 +196,9 @@ main { display: block; }
 .names__name {
   display: block;
   font-family: var(--font-script);
-  font-size: clamp(2.8rem, 7.5vw, 4.4rem);
+  font-size: clamp(4rem, 10vw, 6.2rem);
   margin: 0.1em 0;
+  transform: scaleX(var(--script-scale));
 }
 .names__amp {
   display: block;
@@ -205,8 +210,9 @@ main { display: block; }
 
 .event-date {
   font-family: var(--font-script);
-  font-size: clamp(1.9rem, 4.5vw, 2.85rem);
+  font-size: clamp(2.65rem, 6.1vw, 4.05rem);
   margin: 2.25rem 0 0.25rem;
+  transform: scaleX(var(--script-scale));
 }
 .event-loc {
   font-size: 1.2rem;
@@ -249,10 +255,11 @@ main { display: block; }
 .page-title {
   font-family: var(--font-script);
   color: var(--color-primary);
-  font-size: clamp(2.75rem, 6vw, 3.75rem);
+  font-size: clamp(4rem, 8.2vw, 5.3rem);
   font-weight: 400;
   margin: 0;
   line-height: 1.05;
+  transform: scaleX(var(--script-scale));
 }
 .page-divider { width: 190px; max-width: 70%; margin: 0.4rem auto 0; opacity: 0.85; }
 .page-subtitle { margin: 0.75rem auto 0; max-width: 560px; font-style: italic; color: #555; }
@@ -269,17 +276,21 @@ main { display: block; }
   font-family: var(--font-script);
   font-weight: 400;
   color: var(--color-primary);
-  font-size: clamp(2.1rem, 4.5vw, 2.75rem);
+  font-size: clamp(2.95rem, 6.1vw, 3.95rem);
   text-align: center;
   margin: 2.75rem 0 1.1rem;
   line-height: 1.1;
+  transform: scaleX(var(--script-scale));
 }
 .content__inner h3 {
   font-family: var(--font-script);
   font-weight: 400;
   color: var(--color-primary);
-  font-size: 1.5rem;
+  font-size: 2.15rem;
   margin: 2rem 0 0.4rem;
+  display: inline-block;
+  transform: scaleX(var(--script-scale));
+  transform-origin: left;
 }
 .content__inner h4 {
   font-weight: 600;
@@ -384,8 +395,9 @@ main { display: block; }
 .rsvp-cta__title {
   font-family: var(--font-script);
   font-weight: 400;
-  font-size: clamp(2.3rem, 5vw, 3.1rem);
+  font-size: clamp(3.25rem, 6.8vw, 4.4rem);
   margin: 0 0 0.6rem;
+  transform: scaleX(var(--script-scale));
 }
 .rsvp-cta__text { margin: 0 auto 1.8rem; opacity: 0.95; }
 
@@ -400,8 +412,10 @@ main { display: block; }
 }
 .site-footer__names {
   font-family: var(--font-script);
-  font-size: 2.1rem;
+  font-size: 2.95rem;
   margin: 0 0 0.25rem;
+  display: inline-block;
+  transform: scaleX(var(--script-scale));
 }
 .site-footer__date { opacity: 0.85; margin: 0 0 0.9rem; letter-spacing: 0.04em; }
 .site-footer__rsvp {
