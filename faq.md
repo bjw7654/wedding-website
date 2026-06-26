@@ -8,13 +8,11 @@ subtitle: Answers to a few common questions.
 
 ## What should I wear?
 
-The dress code is **cocktail / formal**. The ceremony is outdoors on grass, so
-consider block heels or flats.
+The dress code is **cocktail attire**. 
 
 ## Can I bring a guest?
 
-Your invitation and RSVP will list the number of seats reserved for you. If you
-have questions, just reach out to us directly.
+Your invitation and RSVP will list the number of seats reserved for you. 
 
 ## Are kids welcome?
 
