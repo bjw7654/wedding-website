@@ -12,9 +12,14 @@
   --color-primary:      {{ site.colors.primary      | default: "#3464A6" }};
   --color-primary-dark: {{ site.colors.primary_dark | default: "#183B54" }};
   --color-accent:       {{ site.colors.accent       | default: "#C7305B" }};
-  --color-bg:           {{ site.colors.bg           | default: "#ffffff" }};
-  --color-bg-alt:       {{ site.colors.bg_alt       | default: "#f5f7fb" }};
-  --color-text:         {{ site.colors.text         | default: "#2b2b2b" }};
+  --color-bg:           {{ site.colors.bg           | default: "#3464A6" }};
+  --color-bg-alt:       {{ site.colors.bg_alt       | default: "#2d5a99" }};
+  --color-text:         {{ site.colors.text         | default: "#eaf1fb" }};
+
+  /* Text & decoration that sit on top of the royal-blue background. */
+  --color-on-primary:        #ffffff;
+  --color-on-primary-muted:  rgba(255, 255, 255, 0.82);
+  --color-hairline:          rgba(255, 255, 255, 0.28);
 
   --font-script: "Luxurious Script", "Segoe Script", cursive;
   --font-serif:  "EB Garamond", Georgia, "Times New Roman", serif;
@@ -24,12 +29,20 @@
 
   --maxw: 1080px;
   --content-w: 720px;
+
+  /* Where the floral side vines are anchored (background-position Y). Both sides
+     use the SAME value; the left/right ALTERNATION is baked into the left tile
+     (mirrored + rolled half a period). On sub-pages this is 0 so the vines start
+     right at the top of the page and run behind the (transparent) header without
+     a break. The home page overrides this (see body.layout-home). */
+  --vine-top-left: 0px;
+  --vine-top-right: 0px;
 }
 
 /* ---------- Base ---------- */
 * { box-sizing: border-box; }
 
-html { scroll-behavior: smooth; }
+html { scroll-behavior: smooth; overflow-x: hidden; } /* clip the floral vines that bleed off the edges so they don't add a horizontal scrollbar */
 
 body {
   margin: 0;
@@ -39,13 +52,63 @@ body {
   color: var(--color-text);
   background: var(--color-bg);
   -webkit-font-smoothing: antialiased;
+  position: relative;            /* anchors the floral side borders below */
 }
 
 img { max-width: 100%; display: block; }
 
 a { color: var(--color-accent); }
 
-main { display: block; }
+main { display: block; position: relative; z-index: 1; }
+
+/* ===========================================================================
+   Site-wide floral border
+   Large bouquet "vines" run down the left and right edges of every page, behind
+   the content. The art (bouquet-vine.png) is the bouquet TILTED inward (~23deg,
+   matching the published names-band florals: the top of the bouquet leans toward
+   the page center) with a tall band of empty space baked in below it, so when it
+   repeats down the page there is a big break between blooms. The bouquet's OUTER
+   edge is clipped flat in the PNG so it runs off the page edge (like the source
+   site, a bit less). The left tile is a horizontal mirror of the right; the two
+   sides are then STAGGERED vertically (see --vine-top-* below) so they alternate.
+   =========================================================================== */
+body::before,
+body::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: clamp(170px, 20vw, 300px);
+  background-repeat: repeat-y;
+  background-size: 100% auto;     /* fill the column width; the baked-in gap spaces the repeats */
+  opacity: 0.85;
+  pointer-events: none;
+  z-index: 0;
+}
+/* Each tile is the bouquet leaning inward with its OUTER edge clipped flat (baked
+   into the PNG). Placed at left:0 / right:0, that clipped edge sits at the page
+   edge so the bouquet runs off-frame there. The left tile is the right tile
+   horizontally mirrored AND rolled vertically by half a period, so the two sides
+   ALTERNATE (a bloom on one side lines up with a gap on the other) regardless of
+   viewport width. Both sides therefore share the same background-position Y
+   (--vine-top-*). No translateX, no mask. */
+body::before {
+  left: 0;
+  background-image: url("{{ '/assets/images/florals/bouquet-vine-left.png' | relative_url }}");
+  background-position: center var(--vine-top-left);
+}
+body::after {
+  right: 0;
+  background-image: url("{{ '/assets/images/florals/bouquet-vine.png' | relative_url }}");
+  background-position: center var(--vine-top-right);
+}
+/* The home page leads with a tall, opaque hero photo (~895px), so start the
+   vines just below it (the right bouquet flanks the names band). The left/right
+   alternation is baked into the left tile, so both sides use the same value. */
+body.layout-home {
+  --vine-top-left: 940px;
+  --vine-top-right: 940px;
+}
 
 /* Visually-hidden helper for screen readers */
 .sr-only {
@@ -62,6 +125,38 @@ main { display: block; }
   text-align: center;
   padding: 1.5rem 1rem 0;
   position: relative;
+  z-index: 2;                    /* sit above the floral side borders */
+}
+
+/* On sub-pages the side florals run continuously from the very top of the page,
+   behind the header, so the header itself is transparent and lets them show
+   through (no opaque band splitting the top off from the rest). The home page
+   keeps its solid blue header above the hero photos, with no florals behind it. */
+body.layout-page .site-header {
+  background: transparent;
+}
+
+/* A soft hairline along the bottom of the header on sub-pages only. It is strong
+   across the centre (where there is no floral) and fades out toward the side
+   columns where the vines sit, gently marking the end of the nav without cutting
+   off the continuous florals. Not shown on the home page. */
+body.layout-page .site-header::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 2px;
+  background: linear-gradient(
+    90deg,
+    transparent 0,
+    transparent 16%,
+    var(--color-hairline) 30%,
+    rgba(255, 255, 255, 0.5) 50%,
+    var(--color-hairline) 70%,
+    transparent 84%,
+    transparent 100%
+  );
 }
 
 .site-header__title {
@@ -166,24 +261,12 @@ main { display: block; }
    =========================================================================== */
 .announce {
   position: relative;
-  background: var(--color-primary);
+  z-index: 1;
+  background: transparent;       /* the royal-blue body shows through */
   color: #fff;
   text-align: center;
   padding: 4.5rem 1.25rem;
-  overflow: hidden;
 }
-
-.announce__floral {
-  position: absolute;
-  height: clamp(320px, 56vw, 720px);
-  width: auto;
-  opacity: 0.95;
-  pointer-events: none;
-  user-select: none;
-  z-index: 0;
-}
-.announce__floral--tl { top: 156px; left: 52px; transform: translate(-50%, -50%) rotate(157deg); }
-.announce__floral--br { bottom: 156px; right: 52px; transform: translate(50%, 50%) rotate(-23deg); }
 
 .announce__inner {
   position: relative;
@@ -248,13 +331,13 @@ main { display: block; }
    Page header (sub-pages)
    =========================================================================== */
 .page-head {
-  background: var(--color-bg-alt);
+  background: transparent;       /* uniform royal blue, like the rest of the site */
   text-align: center;
   padding: 3.25rem 1rem 1.75rem;
 }
 .page-title {
   font-family: var(--font-script);
-  color: var(--color-primary);
+  color: var(--color-on-primary);
   font-size: clamp(4rem, 8.2vw, 5.3rem);
   font-weight: 400;
   margin: 0;
@@ -262,7 +345,7 @@ main { display: block; }
   transform: scaleX(var(--script-scale));
 }
 .page-divider { width: 190px; max-width: 70%; margin: 0.4rem auto 0; opacity: 0.85; }
-.page-subtitle { margin: 0.75rem auto 0; max-width: 560px; font-style: italic; color: #555; }
+.page-subtitle { margin: 0.75rem auto 0; max-width: 560px; font-style: italic; color: var(--color-on-primary-muted); }
 
 /* ===========================================================================
    Content / Markdown styling
@@ -275,7 +358,7 @@ main { display: block; }
 .content__inner h2 {
   font-family: var(--font-script);
   font-weight: 400;
-  color: var(--color-primary);
+  color: var(--color-on-primary);
   font-size: clamp(2.95rem, 6.1vw, 3.95rem);
   text-align: center;
   margin: 2.75rem 0 1.1rem;
@@ -285,7 +368,7 @@ main { display: block; }
 .content__inner h3 {
   font-family: var(--font-script);
   font-weight: 400;
-  color: var(--color-primary);
+  color: var(--color-on-primary);
   font-size: 2.15rem;
   margin: 2rem 0 0.4rem;
   display: inline-block;
@@ -294,12 +377,12 @@ main { display: block; }
 }
 .content__inner h4 {
   font-weight: 600;
-  color: var(--color-primary-dark);
+  color: var(--color-on-primary);
   font-size: 1.2rem;
   margin: 1.5rem 0 0.3rem;
 }
 .content__inner p { margin: 0 0 1.2rem; }
-.content__inner a { color: var(--color-accent); text-underline-offset: 2px; }
+.content__inner a { color: var(--color-on-primary); text-underline-offset: 3px; text-decoration-thickness: 1px; }
 .content__inner a:hover { text-decoration: none; }
 
 .content__inner ul,
@@ -311,15 +394,15 @@ main { display: block; }
 .content__inner blockquote {
   margin: 1.5rem 0;
   padding: 0.4rem 1.4rem;
-  border-left: 3px solid var(--color-primary);
-  color: #555;
+  border-left: 3px solid rgba(255, 255, 255, 0.5);
+  color: var(--color-on-primary-muted);
   font-style: italic;
 }
 
 .content__inner hr {
   border: 0;
   height: 1px;
-  background: linear-gradient(to right, transparent, #d6dbe6, transparent);
+  background: linear-gradient(to right, transparent, rgba(255, 255, 255, 0.45), transparent);
   margin: 2.5rem auto;
 }
 
@@ -330,11 +413,11 @@ main { display: block; }
 }
 .content__inner th,
 .content__inner td {
-  border-bottom: 1px solid #e4e7ee;
+  border-bottom: 1px solid var(--color-hairline);
   padding: 0.6rem 0.5rem;
   text-align: left;
 }
-.content__inner th { color: var(--color-primary-dark); }
+.content__inner th { color: var(--color-on-primary); }
 
 /* A reusable centered detail block for schedules etc. */
 .content__inner .detail { text-align: center; }
@@ -379,14 +462,14 @@ main { display: block; }
 .btn--light:hover { transform: translateY(-2px); box-shadow: 0 10px 24px rgba(0, 0, 0, 0.18); }
 .btn--primary { background: var(--color-accent); color: #fff; }
 .btn--primary:hover { transform: translateY(-2px); filter: brightness(1.05); }
-.btn--outline { border-color: var(--color-primary); color: var(--color-primary); }
-.btn--outline:hover { background: var(--color-primary); color: #fff; }
+.btn--outline { border-color: #fff; color: #fff; }
+.btn--outline:hover { background: #fff; color: var(--color-primary); }
 
 /* ===========================================================================
    RSVP call to action
    =========================================================================== */
 .rsvp-cta {
-  background: var(--color-primary);
+  background: transparent;       /* uniform royal blue with the floral border showing through */
   color: #fff;
   text-align: center;
   padding: 4.25rem 1.25rem;
@@ -409,6 +492,8 @@ main { display: block; }
   color: #fff;
   text-align: center;
   padding: 2.75rem 1rem;
+  position: relative;
+  z-index: 2;                    /* sit above the floral side borders */
 }
 .site-footer__names {
   font-family: var(--font-script);
@@ -448,12 +533,13 @@ main { display: block; }
   .nav-rsvp a { display: inline-block; }
 
   .announce { padding: 3.25rem 1rem; }
-  .announce__floral { height: 385px; opacity: 0.85; }
-  .announce__floral--tl { top: 24px; left: -6px; }
-  .announce__floral--br { bottom: 24px; right: -6px; }
 
-  /* Make the countdown more compact on phones so it stays on one line and
-     clear of the corner bouquets. */
+  /* Slim the floral side borders on phones so they frame the page without
+     crowding the text. */
+  body::before,
+  body::after { width: clamp(96px, 30vw, 150px); opacity: 0.7; }
+
+  /* Make the countdown more compact on phones so it stays on one line. */
   .countdown { gap: 0.9rem 1.2rem; }
   .countdown__unit { min-width: 46px; }
   .countdown__num { font-size: 1.55rem; }

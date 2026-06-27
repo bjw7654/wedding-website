@@ -61,13 +61,15 @@ hero_images:
 closing_photo: "/assets/images/closing.jpg"
 
 # --- Colors (change these hex codes to re-skin the whole site) ---------------
+# The whole site uses a royal-blue background with light text, just like our
+# Zola page. "bg" is that blue; "text" is the soft white used for words on top.
 colors:
-  primary: "#3464A6"       # Main royal blue
+  primary: "#3464A6"       # Main royal blue (used for the blue background too)
   primary_dark: "#183B54"  # Deep navy (footer)
-  accent: "#C7305B"        # Rose accent (links & buttons)
-  bg: "#ffffff"            # Page background
-  bg_alt: "#f5f7fb"        # Soft background for page titles
-  text: "#2b2b2b"          # Body text
+  accent: "#C7305B"        # Rose accent (buttons)
+  bg: "#3464A6"            # Page background — the royal blue behind everything
+  bg_alt: "#2d5a99"        # A slightly deeper blue (kept for flexibility)
+  text: "#eaf1fb"          # Body text — soft white that reads well on the blue
 
 # =============================================================================
 #  TECHNICAL SETTINGS — you can usually leave everything below this line alone.
