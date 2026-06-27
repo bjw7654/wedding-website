@@ -13,6 +13,9 @@ layout: default
   </div>
 </section>
 
+{% comment %} RSVP section temporarily hidden site-wide until RSVP mail goes out.
+   To restore: delete this comment wrapper so the include runs again.
 {% unless page.hide_rsvp %}
 {% include rsvp-cta.html %}
 {% endunless %}
+{% endcomment %}
