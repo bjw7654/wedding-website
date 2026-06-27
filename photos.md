@@ -12,13 +12,18 @@ subtitle: Photos of Erin, Ben, Hazel, & Zig.
 </figure>
 
 <figure>
-  <img src="{{ '/assets/images/photos/HazelPadre.jpg' | relative_url }}" alt="Padre Island">
+  <img src="{{ '/assets/images/photos/HazelPadre.jpg' | relative_url }}" alt="Padre Island with Hazel">
   <figcaption>Padre Island — Hazel's first trip to the beach</figcaption>
 </figure>
 
 <figure>
   <img src="{{ '/assets/images/photos/HazelZigPadre.jpg' | relative_url }}" alt="Padre Island with Hazel and Zig">
   <figcaption>Padre Island with Hazel and Zig</figcaption>
+</figure>
+
+<figure>
+  <img src="{{ '/assets/images/photos/ErinBenBeach.jpg' | relative_url }}" alt="Padre Islandg">
+  <figcaption>Padre Island</figcaption>
 </figure>
 
 <figure>
