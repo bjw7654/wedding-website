@@ -391,6 +391,17 @@ body.layout-page .site-header::after {
 
 .content__inner img { margin: 1.5rem auto; border-radius: 4px; }
 
+/* Image with a caption underneath: <figure><img><figcaption>…</figcaption></figure> */
+.content__inner figure { margin: 1.5rem auto; text-align: center; }
+.content__inner figure img { margin: 0 auto; }
+.content__inner figcaption {
+  margin: 0.5rem auto 0;
+  max-width: 560px;
+  font-size: 0.9rem;
+  font-style: italic;
+  color: var(--color-on-primary-muted);
+}
+
 .content__inner blockquote {
   margin: 1.5rem 0;
   padding: 0.4rem 1.4rem;
