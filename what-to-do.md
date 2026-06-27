@@ -47,7 +47,7 @@ explore while you're in town.
 * **[Via 313](https://www.via313.com/)** — A go-to Austin spot for thick, square, Detroit-style pizza.
 * **[Phil's Ice House](https://www.philsicehouse.com/)** — Erin & Ben's favorite fast burger spot in Austin: casual, local, kid-friendly, and perfect for an easy burger, fries, and shake.
 * **[Cabo Bob's](https://cabobobs.com/)** — Big burritos and bowls with fresh-pressed tortillas.
-* **[Juan in a Million](https://juaninamillion.com/)** — Old-school East Austin Tex-Mex breakfast institution.
+* **[Bird Bird Biscuit](https://www.birdbirdbiscuit.com/)** — Flaky, buttery biscuit sandwiches from a beloved Austin favorite.
 * **[Kerbey Lane Cafe](https://www.kerbeylanecafe.com/)** — Austin diner standby for pancakes, queso, and comfort food.
 * **[Amy's Ice Creams](https://amysicecreams.com/)** — Local ice cream classic with unique flavors and several locations around town.
 * **[Mozart's Coffee Roasters](https://mozartscoffee.com/)** — Lake Austin coffee shop with great views, desserts, and a classic Austin feel.
