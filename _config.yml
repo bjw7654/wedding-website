@@ -89,6 +89,7 @@ exclude:
   - Gemfile
   - Gemfile.lock
   - README.md
+  - LICENSE
   - vendor
   - "*.gemspec"
   # Keep the high-res floral source in the repo, but don't publish it to the live site.

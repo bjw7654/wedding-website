@@ -31,7 +31,7 @@ We have secured two hotel blocks for our out of town guests (see below). There a
       <div class="hotel-card__row"><dt>Rates</dt><dd>$229/night + taxes/fees for 1 King bed or 2 Queen beds</dd></div>
       <div class="hotel-card__row"><dt>Book by</dt><dd>Feb 17, 2027</dd></div>
     </dl>
-    <a class="btn btn--light hotel-card__cta" href="https://www.marriott.com/event-reservations/reservation-link.mi?id=1781805245615&key=GRP&app=resvlink&_branch_match_id=1295760792521501551&_branch_referrer=H4sIAAAAAAAAA8soKSkottLXTywo0MtNLCrKzC8p0UvOz9UvSi0uy0wtN7IHytiCODmZedlqmSm2huYWhhYGpkYmpmaGpmrZqZW27kEBanVFqWmpQO156fFJRfnlxalFts4ZRfm5qQCmQFIDYQAAAA%3D%3D">Reserve a Room</a>
+    <a class="btn btn--light hotel-card__cta" href="https://www.marriott.com/event-reservations/reservation-link.mi?id=1781805245615&key=GRP&app=resvlink">Reserve a Room</a>
   </div>
   <div class="hotel-card">
     <h3 class="hotel-card__name">Hampton Inn Austin/Oak Hill</h3>

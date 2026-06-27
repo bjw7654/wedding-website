@@ -1,0 +1,54 @@
+MIT License (code and template only — please read the note below)
+
+Copyright (c) 2026 Erin Thompson and Ben Williams
+
+==============================================================================
+WHAT THIS LICENSE COVERS — AND WHAT IT DOES NOT
+==============================================================================
+
+The MIT permission below applies ONLY to the website's source code and design
+template — the parts that make the site work:
+
+  • Jekyll layouts, includes, and configuration (_layouts/, _includes/,
+    _config.yml, Gemfile, .github/)
+  • Stylesheets (assets/css/) and JavaScript (assets/js/)
+
+It does NOT cover the personal content of this website, which is reserved by
+the copyright holders — All Rights Reserved. Personal content includes, but is
+not limited to:
+
+  • The written words and our story (e.g. index.md, faq.md, schedule.md,
+    travel.md, what-to-do.md, photos.md, registry.md, and any other page text)
+  • Photographs and images (everything under assets/images/, including the
+    hero slideshow, closing photo, and photo-gallery images)
+  • Our names, likenesses, event details, and any guest information
+
+You are welcome to reuse the code and template under the MIT terms that follow.
+Please do NOT reuse, copy, or republish our personal text or photographs.
+
+Note: Some decorative artwork (floral vines, schedule icons, favicon) and the
+web fonts (EB Garamond and Luxurious Script, served via Google Fonts under the
+SIL Open Font License) are not original source code and are provided as-is;
+they are not granted to you under the MIT license below.
+
+==============================================================================
+MIT License (applies to the source code and template, as described above)
+==============================================================================
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.

@@ -178,4 +178,18 @@ assets/css/          ← styling (advanced)
 assets/js/           ← slideshow + countdown (advanced)
 ```
 
+---
+
+## 📄 License
+
+The **code and template** (layouts, includes, config, styles, and scripts) are
+released under the **MIT License** — feel free to reuse them for your own site.
+
+Our **personal content is not included**: the written words and our story, all
+photographs and images in `assets/images/`, and our names and event details are
+**© Erin Thompson and Ben Williams, All Rights Reserved**. Please don't reuse
+those. See the [`LICENSE`](LICENSE) file for the full details.
+
+---
+
 Happy wedding planning! 💍
