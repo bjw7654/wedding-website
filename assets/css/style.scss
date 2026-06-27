@@ -430,6 +430,81 @@ body.layout-page .site-header::after {
 }
 .content__inner th { color: var(--color-on-primary); }
 
+/* ---------------------------------------------------------------------------
+   Hotel cards (Travel page "Where to Stay")
+   One card per hotel, replacing the cramped 5-column table that forced the
+   hotel name and address to word-wrap. Responsive grid: two-up on wider
+   screens, stacking to one column on phones.
+   --------------------------------------------------------------------------- */
+.content__inner .hotel-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 270px), 1fr));
+  gap: 1.5rem;
+  margin: 1.75rem 0 2rem;
+}
+.content__inner .hotel-card {
+  display: flex;
+  flex-direction: column;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid var(--color-hairline);
+  border-radius: 10px;
+  padding: 1.6rem 1.5rem;
+}
+/* Override the script-font h3 default so the hotel name reads cleanly. */
+.content__inner .hotel-card__name {
+  font-family: var(--font-serif);
+  font-weight: 600;
+  font-size: 1.4rem;
+  line-height: 1.25;
+  color: var(--color-on-primary);
+  margin: 0 0 0.5rem;
+  display: block;
+  transform: none;
+}
+.content__inner .hotel-card__address {
+  margin: 0 0 1.1rem;
+  color: var(--color-on-primary-muted);
+  font-size: 0.98rem;
+  line-height: 1.55;
+}
+.content__inner .hotel-card__details {
+  margin: 0 0 1.5rem;
+  padding: 0.4rem 0 0;
+  border-top: 1px solid var(--color-hairline);
+}
+.content__inner .hotel-card__row {
+  display: flex;
+  gap: 1rem;
+  padding: 0.55rem 0;
+}
+.content__inner .hotel-card__row + .hotel-card__row {
+  border-top: 1px solid rgba(255, 255, 255, 0.12);
+}
+.content__inner .hotel-card__row dt {
+  flex: 0 0 5rem;
+  font-size: 0.72rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--color-on-primary-muted);
+  padding-top: 0.2rem;
+}
+.content__inner .hotel-card__row dd {
+  flex: 1;
+  margin: 0;
+  color: var(--color-on-primary);
+}
+/* margin-top:auto pins the button to the bottom so cards of differing
+   heights keep their CTAs aligned. */
+.content__inner .hotel-card__cta {
+  margin-top: auto;
+  display: block;
+  width: 100%;
+  text-align: center;
+}
+/* The .content__inner anchor color (white) is more specific than .btn--light,
+   so restore the button's own dark-on-white text inside page content. */
+.content__inner .btn--light { color: var(--color-primary); }
+
 /* A reusable centered detail block for schedules etc. */
 .content__inner .detail { text-align: center; }
 

@@ -22,10 +22,27 @@ options from the airport.
 
 We have secured two hotel blocks for our out of town guests (see below). There are also AirBnBs available near the venue. You can book a room in either hotel block using the corresponding booking link. If you call to make a reservation, be sure to reference the Thompson Williams Wedding. We encourage you to book early! If you have any issues booking, please email team@blockbirdie.com for assistance.
 
-
-| Hotel | Distance | Rates | Booking Deadline | Booking Link
-| ----- | -------- | ----- |----------------- | ------------ |
-| AC Hotel Austin Hill Country<br>7415 Southwest Parkway<br>Austin, TX 78735<br>512-551-4009 | 10.8 miles to venue | $229/night + taxes/fees for 1 King bed or<br>2 Queen beds | Feb 17, 2027 | [Reserve a Room](https://www.marriott.com/event-reservations/reservation-link.mi?id=1781805245615&key=GRP&app=resvlink&_branch_match_id=1295760792521501551&_branch_referrer=H4sIAAAAAAAAA8soKSkottLXTywo0MtNLCrKzC8p0UvOz9UvSi0uy0wtN7IHytiCODmZedlqmSm2huYWhhYGpkYmpmaGpmrZqZW27kEBanVFqWmpQO156fFJRfnlxalFts4ZRfm5qQCmQFIDYQAAAA%3D%3D) |
-| Hampton Inn Austin/Oak Hill<br>6401 U.S. 290<br>Austin, TX 78735<br>512-891-7414 | 9.5 miles to venue | $179/night + taxes/fees for 1 King bed<br>$189/night + taxes/fees for 2 Queen beds | February 18, 2027 | [Reserve a Room](https://www.hilton.com/en/attend-my-event/thompsonwilliamswedding2027/) |
+<div class="hotel-cards">
+  <div class="hotel-card">
+    <h3 class="hotel-card__name">AC Hotel Austin Hill Country</h3>
+    <p class="hotel-card__address">7415 Southwest Parkway<br>Austin, TX 78735<br>512-551-4009</p>
+    <dl class="hotel-card__details">
+      <div class="hotel-card__row"><dt>Distance</dt><dd>10.8 miles to venue</dd></div>
+      <div class="hotel-card__row"><dt>Rates</dt><dd>$229/night + taxes/fees for 1 King bed or 2 Queen beds</dd></div>
+      <div class="hotel-card__row"><dt>Book by</dt><dd>Feb 17, 2027</dd></div>
+    </dl>
+    <a class="btn btn--light hotel-card__cta" href="https://www.marriott.com/event-reservations/reservation-link.mi?id=1781805245615&key=GRP&app=resvlink&_branch_match_id=1295760792521501551&_branch_referrer=H4sIAAAAAAAAA8soKSkottLXTywo0MtNLCrKzC8p0UvOz9UvSi0uy0wtN7IHytiCODmZedlqmSm2huYWhhYGpkYmpmaGpmrZqZW27kEBanVFqWmpQO156fFJRfnlxalFts4ZRfm5qQCmQFIDYQAAAA%3D%3D">Reserve a Room</a>
+  </div>
+  <div class="hotel-card">
+    <h3 class="hotel-card__name">Hampton Inn Austin/Oak Hill</h3>
+    <p class="hotel-card__address">6401 U.S. 290<br>Austin, TX 78735<br>512-891-7414</p>
+    <dl class="hotel-card__details">
+      <div class="hotel-card__row"><dt>Distance</dt><dd>9.5 miles to venue</dd></div>
+      <div class="hotel-card__row"><dt>Rates</dt><dd>$179/night + taxes/fees for 1 King bed<br>$189/night + taxes/fees for 2 Queen beds</dd></div>
+      <div class="hotel-card__row"><dt>Book by</dt><dd>February 18, 2027</dd></div>
+    </dl>
+    <a class="btn btn--light hotel-card__cta" href="https://www.hilton.com/en/attend-my-event/thompsonwilliamswedding2027/">Reserve a Room</a>
+  </div>
+</div>
 
 
