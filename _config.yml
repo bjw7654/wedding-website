@@ -93,3 +93,8 @@ exclude:
   - "*.gemspec"
   # Keep the high-res floral source in the repo, but don't publish it to the live site.
   - assets/images/florals/bouquet-source.png
+  # Keep the original (pre-transparency) schedule icons in the repo as a source of
+  # truth, but don't publish these large backups to the live site.
+  - assets/images/schedule/ceremony-orig.png
+  - assets/images/schedule/cocktail-orig.png
+  - assets/images/schedule/reception-orig.png

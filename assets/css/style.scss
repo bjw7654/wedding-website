@@ -508,6 +508,78 @@ body.layout-page .site-header::after {
 /* A reusable centered detail block for schedules etc. */
 .content__inner .detail { text-align: center; }
 
+/* ---------------------------------------------------------------------------
+   Schedule page — venue header + illustrated timeline
+   The icons (assets/images/schedule/*.png) are cream line-art on a TRANSPARENT
+   background, so they blend straight into the royal-blue page like the source
+   inspiration. They're shown at a shared HEIGHT (widths follow each drawing's
+   own proportions) in a centered row, each with the event name + time beneath.
+   --------------------------------------------------------------------------- */
+.content__inner .schedule { text-align: center; }
+
+.content__inner .schedule__venue { margin: 0 auto 2.75rem; }
+.content__inner .schedule__venue-eyebrow {
+  font-size: 0.82rem;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--color-on-primary-muted);
+  margin: 0 0 0.45rem;
+}
+.content__inner .schedule__venue-name {
+  /* serif (not the script heading font) so the venue name reads cleanly,
+     mirroring the hotel-card name treatment. */
+  font-family: var(--font-serif);
+  font-weight: 600;
+  font-size: clamp(1.7rem, 4.6vw, 2.2rem);
+  line-height: 1.15;
+  color: var(--color-on-primary);
+  margin: 0 0 0.4rem;
+  transform: none;
+}
+.content__inner .schedule__venue-address {
+  margin: 0;
+  color: var(--color-on-primary-muted);
+}
+
+.content__inner .schedule__items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 1.75rem 2.4rem;
+  margin: 2.5rem 0 0;
+}
+.content__inner .schedule__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.content__inner .schedule__icon {
+  width: auto;
+  height: clamp(64px, 16vw, 132px);   /* equal height; widths follow the art */
+  margin: 0 0 0.9rem;                  /* override the default content-img margins */
+}
+.content__inner .schedule__event {
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  color: var(--color-on-primary);
+  margin: 0 0 0.15rem;
+}
+.content__inner .schedule__time {
+  margin: 0;
+  color: var(--color-on-primary-muted);
+  font-variant-numeric: tabular-nums;
+}
+
+.content__inner .schedule__note {
+  margin: 1.4rem auto 0;
+  max-width: 480px;
+  font-size: 0.95rem;
+  font-style: italic;
+  color: var(--color-on-primary-muted);
+}
+.content__inner .schedule__note:first-of-type { margin-top: 3rem; }
+
 /* ===========================================================================
    Closing photo (bottom of the home page, like our Zola site)
    A single wide photo, centered and shown in full (no cropping).
@@ -639,6 +711,9 @@ body.layout-page .site-header::after {
   .hero__slide { background-position: var(--focus-mobile, center); }
 
   .content { padding: 2.5rem 1.1rem; }
+
+  /* Tighten the gaps so the three schedule icons stay on one row on phones. */
+  .content__inner .schedule__items { gap: 1.25rem 0.9rem; }
 }
 
 @media (prefers-reduced-motion: reduce) {
