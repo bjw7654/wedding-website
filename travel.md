@@ -11,7 +11,7 @@ subtitle: How to get here and where to stay.
   <figcaption>Downtown Austin - Erin took this picture from the Hike and Bike trail</figcaption>
 </figure>
 
-> **A note for wedding week:** Please note, our wedding weekend overlaps with the end of SXSW. Traffic will be worse than usual. (We thought we had avoided this when we booked our date in January 2026, but the festival was extended another week🙃
+> **A note for wedding week:** Our wedding weekend overlaps with the end of SXSW. Traffic will be worse than usual. (We thought we had avoided this when we booked our date in January 2026, but the festival was extended another week🙃
 
 ## Getting There
 
