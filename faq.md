@@ -1,7 +1,7 @@
 ---
 layout: page
 title: FAQ
-nav_order: 5
+nav_order: 6
 permalink: /faq/
 subtitle: Answers to a few common questions.
 published: false   # Page hidden for now — set to true (or remove) to bring the FAQ back (returns to nav at order 5).

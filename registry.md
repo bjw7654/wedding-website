@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Registry
-# nav_order: 6   # Hidden from the menu for now — uncomment to show Registry in the header again.
+# nav_order: 7   # Hidden from the menu for now — uncomment to show Registry in the header again.
 permalink: /registry/
 subtitle: Your presence is the greatest gift.
 published: false   # Page hidden for now — set to true (or remove) to bring the Registry back.
