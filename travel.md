@@ -8,7 +8,7 @@ subtitle: How to get here and where to stay.
 
 <figure>
   <img src="{{ '/assets/images/austin.jpg' | relative_url }}" alt="Downtown Austin, Texas">
-  <figcaption>Downtown Austin, Texas</figcaption>
+  <figcaption>Downtown Austin - Erin took this picture from the Hike and Bike trail</figcaption>
 </figure>
 
 Please note, our wedding weekend overlaps with the end of SXSW. Traffic will be worse than usual. (We thought we had avoided this when we booked our date in January 2026, but the festival was extended another week🙃
