@@ -30,6 +30,7 @@ explore while you're in town.
 * **[Red Ash](https://www.redashgrill.com/)** — Our favorite fine-dining Italian spot in Austin, known for handmade pasta, wood-fired steaks, and a lively, special-occasion feel. Book early.
 * **[Aba](https://www.abarestaurants.com/austin)** — Incredible Mediterranean food with standout dips, mezze, kebabs, seafood, and cocktails. Everything is fresh, flavorful, and extremely shareable.
 * **[Odd Duck](https://www.oddduckaustin.com/)** — Creative, seasonal Austin food in a relaxed but special-feeling setting. A favorite of Ben's.
+* **[North Italia](https://www.northitalia.com/locations/austin-tx-2nd-street/)** — Modern Italian restuarant known for its handmade pastas, wood-fired pizzas, and fresh, seasonal dishes. One of Erin's favorites. 
 * **[Canje](https://canjeatx.com/)** — Bold, vibrant Caribbean food in East Austin, with incredible jerk chicken, pepperpot, curry, cocktails, and big celebratory flavors. A true Austin standout.
 * **[Uchi](https://uchi.uchirestaurants.com/location/sushi-austin/)** — Austin's iconic sushi and Japanese-inspired fine dining spot. Also check out [Uchiko](https://uchiko.uchirestaurants.com/location/sushi-austin/) and [Uchibā](https://uchiba.uchirestaurants.com/location/sushi-austin/).
 
