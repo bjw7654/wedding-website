@@ -74,6 +74,12 @@ colors:
 # =============================================================================
 #  TECHNICAL SETTINGS — you can usually leave everything below this line alone.
 # =============================================================================
+# The public web address of the finished site. This is used to build full links
+# in the sitemap and in social-share previews (Facebook/iMessage/etc.). It was
+# set when the custom domain (erinandben2027.com) was added.
+url: "https://erinandben2027.com"
+baseurl: ""   # The site lives at the domain's root, so this stays empty.
+
 title: "Erin & Ben"
 description: "Join us as we celebrate our wedding. Schedule, travel, and RSVP details."
 lang: "en"
