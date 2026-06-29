@@ -5,6 +5,29 @@ nav_order: 5
 permalink: /photos/
 subtitle: Photos of Erin, Ben, Hazel, & Zig.
 ---
+<figure>
+  <img src="{{ '/assets/images/photos/WalkingFromCard.jpg' | relative_url }}" alt="Walkingcloseup">
+</figure>
+
+<figure>
+  <img src="{{ '/assets/images/photos/Keyholekiss.jpg' | relative_url }}" alt="KeyholeKiss">
+</figure>
+
+<figure>
+  <img src="{{ '/assets/images/photos/ForeheadKiss.jpg' | relative_url }}" alt="ForeheadKiss">
+</figure>
+
+<figure>
+  <img src="{{ '/assets/images/photos/CheekKiss.jpg' | relative_url }}" alt="CheekKiss">
+</figure>
+
+<figure>
+  <img src="{{ '/assets/images/photos/Lift.jpg' | relative_url }}" alt="Lift">
+</figure>
+
+<figure>
+  <img src="{{ '/assets/images/photos/Closeup.jpg' | relative_url }}" alt="Closeup">
+</figure>
 
 <figure>
   <img src="{{ '/assets/images/photos/SanDiego.jpg' | relative_url }}" alt="San Diego">
